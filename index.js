@@ -30,3 +30,25 @@ window.addEventListener("scroll", function(){
     }
     lastScrollTop = scrollTop;
 });
+
+
+document.querySelectorAll('.quantity').forEach(quantityContainer => {
+    const valueIncrease = quantityContainer.querySelector('.increase');
+    const valueDecrease = quantityContainer.querySelector('.decrease');
+    const quantityInput = quantityContainer.querySelector('.quantity-input');
+
+    valueIncrease.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < quantityInput.max) {
+            quantityInput.value = currentValue + 1;
+        }
+    });
+
+    valueDecrease.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > quantityInput.min) {
+            quantityInput.value = currentValue - 1;
+        }
+    });
+});
+ 
