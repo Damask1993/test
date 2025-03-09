@@ -5,8 +5,10 @@
 
 }
 html{
+    font-size: 62.5%;
     scroll-behavior: smooth;
     overscroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -65,7 +67,7 @@ header {
 
 main {
     padding: 5rem 10%;
-    background-color: #1e1e1e;
+    background-color: #2a2a2e;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -77,7 +79,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    background-color: #131313;
+    background:linear-gradient(180deg, #1f1f1f, #282828);
     padding: 2rem;
     box-shadow: 0 0 20px black;
 
@@ -300,13 +302,13 @@ input[type=number] {
     }
     .nav h1{
         z-index: 1000;
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .nav-menu .nav-link {
         transform: translateY(-1000%);
         cursor: pointer;
-        font-size: .5rem;
-        padding: 2rem;
+        font-size: 1.2rem;
+        padding: 1rem;
         border-bottom: 1px solid aliceblue;
 
     }
