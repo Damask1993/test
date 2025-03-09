@@ -300,11 +300,12 @@ input[type=number] {
     }
     .nav h1{
         z-index: 1000;
+        font-size: 1.7rem;
     }
     .nav-menu .nav-link {
         transform: translateY(-1000%);
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 2rem;
         border-bottom: 1px solid aliceblue;
 
