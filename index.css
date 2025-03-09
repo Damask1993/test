@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
+}
+html{
+    scroll-behavior: smooth;
+    overscroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -32,7 +35,10 @@ header {
 .nav h1 {
     color: white;
     font-weight: 600;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    cursor: pointer;
+
 }
 
 .nav-menu {
@@ -48,7 +54,8 @@ header {
     font-weight: 500;
     padding: .8rem 1.2rem;
     transition: all 0.3s ease-in-out;
-    font-family: cursive;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .nav-menu a:hover {
@@ -270,7 +277,7 @@ input[type=number] {
         align-items: flex-end;
         width: 42px;
         margin-right: .5rem;
-        z-index: 1000;
+        z-index: 999;
     }
     .nav-menu {
         display: flex;
@@ -291,9 +298,16 @@ input[type=number] {
         backdrop-filter: blur(7px);
         z-index: -1;
     }
-    .nav-menu a {
+    .nav h1{
+        z-index: 1000;
+    }
+    .nav-menu .nav-link {
         transform: translateY(-1000%);
         cursor: pointer;
+        font-size: 2rem;
+        padding: 2rem;
+        border-bottom: 1px solid aliceblue;
+
     }
     .nav-menu.active {
         opacity: 1;
@@ -349,6 +363,7 @@ input[type=number] {
     }
     #price {
         font-size: 1rem;
+        padding: .5rem;
     }
     .quantity{
         gap: .2rem;
